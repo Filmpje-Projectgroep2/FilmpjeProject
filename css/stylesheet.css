@@ -1,3 +1,7 @@
+body {
+	min-width: 1024px;
+	}
+
 .logo {
 	display: block;
 	margin-left: auto;
@@ -8,23 +12,75 @@
 	
 .nav {
 	text-align: center;
-	border-bottom-style: solid;
-	border-bottom-color: black;
 	}
 	
 .nav a {
-  color: #3c3c3c;
   font-size: 17px;
   font-weight: bold;
   font-family: Arial;
-  padding: 17px 45px;
+  padding: 17px 47px;
   text-transform: uppercase;
-  display: inline-block;
+  display: inline;
   text-decoration: none;
 	}
 
 .nav li {
   display: inline;
+	}
+	
+.home-knop {
+	background-color: #BB0000;
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	}
+	
+.overzicht-knop { 
+	background-color: #264273;
+	border-radius: 5px 5px 0px 0px;
+	color:white;
+	}
+	
+.agenda-knop {
+	background-color: #efb526;
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	}
+
+.acties-knop {
+	background-color: #1F630B;
+	border-radius: 5px 5px 0px 0px;
+	color: white; 
+	}
+	
+.help-knop {
+	background-color: #9A005B;
+	border-radius: 5px 5px 0px 0px;
+	color: white;
+	}
+	
+.tab-balk, .tab-balk2, .tab-balk3, .tab-balk4, .tab-balk5 {
+	height: 20px;
+	width: 100%;
+	}
+	
+.tab-balk {
+	background-color: #BB0000;
+	}
+	
+.tab-balk2 {
+	background-color: #264273;
+	}
+	
+.tab-balk3 {
+	background-color: #efb526;
+	}
+	
+.tab-balk4 {
+	background-color: #1F630B;
+	}
+	
+.tab-balk5 {
+	background-color: #9A005B
 	}
 	
 .twitter-timeline {
@@ -37,25 +93,5 @@
     padding-bottom: 17%;
 	height: 200px;
     box-sizing: border-box;
-    position: relative;
-	border-bottom-style: solid;
-	border-bottom-color: black;
-	}
-
-#GotG {
-	display: inline-block;
-	margin-top: 25px;
-	margin-right: 300px;
-	margin-left: 300px;
-	width: 175px;
-	height: auto;
-	}
-	
-#TMNT {
-	display: inline-block;
-	margin-top: 25px;
-	margin-right: 150px;
-	margin-left: 150px;
-	width: 175px;
-	height: auto;
+    position: relative;;
 	}
