@@ -30,4 +30,14 @@
 .twitter-timeline {
 	width: 200px;
 	}
+	
+.carousel {
+    width: 100%;
+    padding-bottom: 17%;
+	height: 200px;
+    box-sizing: border-box;
+    position: relative;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	}
 
