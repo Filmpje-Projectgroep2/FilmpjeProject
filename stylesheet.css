@@ -29,6 +29,7 @@
 	
 .twitter-timeline {
 	width: 200px;
+	padding-top: 25px;
 	}
 	
 .carousel {
@@ -41,3 +42,20 @@
 	border-bottom-color: black;
 	}
 
+#GotG {
+	display: inline-block;
+	margin-top: 25px;
+	margin-right: 300px;
+	margin-left: 300px;
+	width: 175px;
+	height: auto;
+	}
+	
+#TMNT {
+	display: inline-block;
+	margin-top: 25px;
+	margin-right: 150px;
+	margin-left: 150px;
+	width: 175px;
+	height: auto;
+	}
