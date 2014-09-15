@@ -26,4 +26,8 @@
 .nav li {
   display: inline;
 	}
+	
+.twitter-timeline {
+	width: 200px;
+	}
 
