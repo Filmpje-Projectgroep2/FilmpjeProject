@@ -7,7 +7,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 65px;
 	}
 	
 .nav {
@@ -54,7 +54,7 @@ body {
 	}
 	
 .tab-balk, .tab-balk2, .tab-balk3, .tab-balk4, .tab-balk5 {
-	height: 20px;
+	height: 10px;
 	width: 100%;
 	}
 	
