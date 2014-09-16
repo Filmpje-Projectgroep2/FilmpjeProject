@@ -28,34 +28,29 @@ body {
   display: inline;
 	}
 	
-.home-knop {
-	background-color: #BB0000;
-	border-radius: 5px 5px 0px 0px;
-	color: white;
-	}
-	
-.overzicht-knop { 
-	background-color: #264273;
-	border-radius: 5px 5px 0px 0px;
-	color:white;
-	}
-	
-.agenda-knop {
-	background-color: #efb526;
+.home-knop, .overzicht-knop, .agenda-knop, .acties-knop, .help-knop {
 	border-radius: 5px 5px 0px 0px;
 	color: white;
 	}
 
+.home-knop {
+	background-color: #BB0000; 
+	}
+
+.overzicht-knop { 
+	background-color: #264273;
+	}
+	
+.agenda-knop {
+	background-color: #efb526;
+	}
+
 .acties-knop {
 	background-color: #1F630B;
-	border-radius: 5px 5px 0px 0px;
-	color: white; 
 	}
 	
 .help-knop {
 	background-color: #9A005B;
-	border-radius: 5px 5px 0px 0px;
-	color: white;
 	}
 	
 .tab-balk, .tab-balk2, .tab-balk3, .tab-balk4, .tab-balk5 {
