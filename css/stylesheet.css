@@ -8,6 +8,7 @@ body {
 	margin-right: auto;
 	padding-top: 30px;
 	padding-bottom: 65px;
+	height: 20%;
 	}
 	
 .nav {
@@ -50,7 +51,7 @@ body {
 	}
 	
 .help-knop {
-	background-color: #620F93;
+	background-color: #E34D00;
 	}
 	
 .tab-balk, .tab-balk2, .tab-balk3, .tab-balk4, .tab-balk5 {
@@ -75,7 +76,7 @@ body {
 	}
 	
 .tab-balk5 {
-	background-color: #620F93;
+	background-color: #E34D00;
 	}
 	
 .twitter-timeline {
