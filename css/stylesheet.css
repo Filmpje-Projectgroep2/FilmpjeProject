@@ -1,5 +1,5 @@
 body {
-	min-width: 1024px;
+	min-width: 800px;
 	}
 
 .logo {
@@ -8,7 +8,6 @@ body {
 	margin-right: auto;
 	padding-top: 30px;
 	padding-bottom: 65px;
-	height: 20%;
 	}
 	
 .nav {
@@ -19,7 +18,7 @@ body {
   font-size: 17px;
   font-weight: bold;
   font-family: Arial;
-  padding: 17px 47px;
+  padding: 17px 2%;
   text-transform: uppercase;
   display: inline;
   text-decoration: none;
@@ -29,7 +28,7 @@ body {
   display: inline;
 	}
 	
-.home-knop, .overzicht-knop, .agenda-knop, .acties-knop, .help-knop {
+.home-knop, .overzicht-knop, .agenda-knop, .acties-knop, .contact-knop {
 	border-radius: 5px 5px 0px 0px;
 	color: white;
 	}
@@ -50,7 +49,7 @@ body {
 	background-color: #1D8335;
 	}
 	
-.help-knop {
+.contact-knop {
 	background-color: #E34D00;
 	}
 	
@@ -91,3 +90,29 @@ body {
     box-sizing: border-box;
     position: relative;;
 	}
+
+.contact-tekst {
+	font-family: Verdana;
+	font-size: 12px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 2%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-left: 5px solid #E34D00;
+	border-radius: 5px;
+	background-color: white;
+	}
+	
+.maps {
+	border: 5px solid #E34D00;
+	border-radius: 5px;
+	width: 45%;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+.background-contact {
+	background-color: #F1F1F1;
+}
