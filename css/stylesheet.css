@@ -1,5 +1,5 @@
 body {
-	min-width: 800px;
+	min-width: 400px;
 	}
 
 .logo {
@@ -94,10 +94,11 @@ body {
 .contact-tekst {
 	font-family: Verdana;
 	font-size: 12px;
-	width: 50%;
+	width: 45%;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 2%;
+	padding-right: 2%;
 	padding-bottom: 1%;
 	padding-top: 1%;
 	border-left: 5px solid #E34D00;
