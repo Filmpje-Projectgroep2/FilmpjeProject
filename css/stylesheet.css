@@ -5,6 +5,7 @@ html {
 body {
 	min-width: 480px;
 	height: 100%;
+	background-image: url("../images/congruent_outline.png");
 }
 
 .logo {
@@ -87,7 +88,7 @@ body {
 .maps {
 	border: 2px solid #E79F7A;
 	border-radius: 5px;
-	width: 45%;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 50px;
