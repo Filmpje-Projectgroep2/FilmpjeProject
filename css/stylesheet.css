@@ -70,7 +70,7 @@ body {
 	display: inline;
 }
 
-.contact-tekst {
+.contact-tekst, .films-tekst {
 	font-family: Verdana;
 	font-size: 12px;
 	width: 50%;
@@ -84,6 +84,16 @@ body {
 	border-radius: 5px;
 	background-color: white;
 }
+
+.contact-tekst {
+	border-left: 5px solid #E79F7A;
+	border-right: 5px solid #E79F7A;
+}
+
+.films-tekst {
+	border-left: 5px solid #505771;
+	border-right: 5px solid #505771;
+}
 	
 .maps {
 	border: 2px solid #E79F7A;
@@ -92,4 +102,12 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 50px;
+}
+
+img {
+	 -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+td { 
+	padding:0px 100px 100px 100px
 }
