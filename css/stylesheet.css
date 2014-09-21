@@ -111,3 +111,35 @@ img {
 td { 
 	padding:0px 100px 100px 100px
 }
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #376FA6;
+	margin-top: 50px;
+}
+.velden {
+	background-color: #DAE7F3;
+	width: 200px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #376FA6;
+	border-top-width: 1px;
+	border-top-style: inset;
+	border-top-color: #6699CC;
+	border-left-color: #6699CC;
+	border-left-width: 1px;
+	border-left-style: inset;
+	line-height: 1.7em;
+}
+a {
+	text-decoration: none;
+	color: #6699CC;
+}
+
+
+.verzend {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #376FA6;
+}
