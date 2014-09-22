@@ -77,9 +77,11 @@ body {
 	padding-right: 2%;
 	padding-bottom: 1%;
 	padding-top: 1%;
-	border-left: 5px solid #E79F7A;
 	border-radius: 5px;
-	background-color: white;
+	background-color: rgba(255,255,255,0.5);
+	-webkit-box-shadow: 4px 2px  #222,  -4px 0 2px #222;
+	-moz-box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
+	box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
 }
 	
 /* De CSS die specifiek bij de homepage hoort */
@@ -103,22 +105,14 @@ body {
 	border-radius: 5px;
 	margin: 2.5% 0% 0.5% 0%;
 }
-
-.filmoverzicht-blok {
-	border-left: 5px solid #505771;
-	border-right: 5px solid #505771;
-}
 	
 /* de CSS die specifiek bij de contactpagina hoort */
 
 .contact-blok {
-	border-left: 5px solid #E79F7A;
-	border-right: 5px solid #E79F7A;
+	margin: 2.5% auto 0% auto;
 }
 
 .maps {
-	border: 2px solid #E79F7A;
-	border-radius: 5px;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
