@@ -67,7 +67,7 @@ body {
 
 /* De CSS die bij elke pagina terugkomt onder de header, zoals het standaardtekstveldformaat */
 
-.contact-tekst, .films-tekst {
+.contact-blok, .filmoverzicht-blok {
 	font-family: Verdana;
 	font-size: 12px;
 	width: 50%;
@@ -132,7 +132,6 @@ td {
 	border-left-style: inset;
 	line-height: 1.7em;
 }
-
 
 .verzend {
 	font-family: Georgia, "Times New Roman", Times, serif;
