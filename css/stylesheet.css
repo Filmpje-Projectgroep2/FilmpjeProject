@@ -88,11 +88,17 @@ body {
 	
 .twitter-timeline {
 	width: 200px;
+	height: 300px; 
 	padding-top: 25px;
-	padding-left: 15%;
+	padding-left: 25%;
 	display: inline;
 }
-
+.slider {
+	display: inline-block;
+	padding-top: 25px;
+	margin-left: 25px;
+}
+	
 /* de CSS die specifiek bij het filmoverzicht hoort */
 
 .filmoverzicht-headline {
@@ -139,7 +145,7 @@ td {
 }
 
 .verzend {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana
 	font-size: 12px;
 	color: #376FA6;
 }
