@@ -93,14 +93,25 @@ body {
 
 /* de CSS die specifiek bij het filmoverzicht hoort */
 
-.films-tekst {
+.filmoverzicht-headline {
+	font-family: Verdana;
+	text-transform: uppercase;
+	color: white;
+	background-color: #505771;
+	width: 55%;
+	padding: 5px 0px 5px 0px;
+	border-radius: 5px;
+	margin: 2.5% 0% 0.5% 0%;
+}
+
+.filmoverzicht-blok {
 	border-left: 5px solid #505771;
 	border-right: 5px solid #505771;
 }
 	
 /* de CSS die specifiek bij de contactpagina hoort */
 
-.contact-tekst {
+.contact-blok {
 	border-left: 5px solid #E79F7A;
 	border-right: 5px solid #E79F7A;
 }
@@ -121,7 +132,7 @@ td {
 .velden {
 	background-color: #DAE7F3;
 	width: 200px;
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: Verdana;
 	font-size: 12px;
 	color: #376FA6;
 	border-top-width: 1px;
