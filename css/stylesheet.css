@@ -8,6 +8,8 @@ body {
 	background-image: url("../images/congruent_outline.png");
 }
 
+/* Dit is het header onderdeel van elke pagina (logo, knoppen) */
+
 .logo {
 	display: block; 
 	margin-left: auto;
@@ -62,13 +64,8 @@ body {
 .contact-knop {
 	background-color: #E79F7A;
 }
-	
-.twitter-timeline {
-	width: 200px;
-	padding-top: 25px;
-	padding-left: 15%;
-	display: inline;
-}
+
+/* De CSS die bij elke pagina terugkomt onder de header, zoals het standaardtekstveldformaat */
 
 .contact-tekst, .films-tekst {
 	font-family: Verdana;
@@ -84,17 +81,30 @@ body {
 	border-radius: 5px;
 	background-color: white;
 }
-
-.contact-tekst {
-	border-left: 5px solid #E79F7A;
-	border-right: 5px solid #E79F7A;
+	
+/* De CSS die specifiek bij de homepage hoort */
+	
+.twitter-timeline {
+	width: 200px;
+	padding-top: 25px;
+	padding-left: 15%;
+	display: inline;
 }
+
+/* de CSS die specifiek bij het filmoverzicht hoort */
 
 .films-tekst {
 	border-left: 5px solid #505771;
 	border-right: 5px solid #505771;
 }
 	
+/* de CSS die specifiek bij de contactpagina hoort */
+
+.contact-tekst {
+	border-left: 5px solid #E79F7A;
+	border-right: 5px solid #E79F7A;
+}
+
 .maps {
 	border: 2px solid #E79F7A;
 	border-radius: 5px;
@@ -104,18 +114,10 @@ body {
 	margin-bottom: 50px;
 }
 
-
-
 td { 
 	padding:0px 100px 100px 100px
 }
 
-body {
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 12px;
-	color: #376FA6;
-	margin-top: 50px;
-}
 .velden {
 	background-color: #DAE7F3;
 	width: 200px;
