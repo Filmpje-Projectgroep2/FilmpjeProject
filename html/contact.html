@@ -4,6 +4,12 @@
 <head>
 	<title>Bioscoop Filmpje</title>
 	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<script>
+	function verstuur()
+	{
+	alert('Bericht is verstuurd!')
+	}
+	</script>
 </head>
 	
 <body>
@@ -24,45 +30,18 @@
     </div>
 
 	<div class="contact-blok"> 
-		<form name="contactform" method="post" action="verzenden.php">
-		<table width="340" align="center">
-			</tr>
-			<tr>
-			<td height="27" valign="top">
-			<label for="first_name">Voornaam *</label> </td>
-			<td height="27" valign="top">
-			<input name="first_name"  type="text" class="velden" size="30" maxlength="50"> </td>
-			</tr>
-			<tr>
-			<td height="27" valign="top"">
-			<label for="last_name">Achternaam *</label> </td>
-			<td height="27" valign="top">
-			<input name="last_name"  type="text" class="velden" size="30" maxlength="50"> </td>
-			</tr>
-			<tr>
-			<td height="27" valign="top">
-			<label for="email">Email Adres *</label> </td>
-			<td height="27" valign="top">
-			<input name="email"  type="text" class="velden" size="30" maxlength="80"> </td>
-			</tr>
-			<tr>
-			<td height="27" valign="top">
-			<label for="telephone">Telefoonnummer</label> </td>
-			<td height="27" valign="top">
-			<input name="telephone"  type="text" class="velden" size="30" maxlength="30"> </td>
-			</tr>
-			<tr>
-			<td height="27" valign="top">
-			<label for="comments">Bericht *</label> </td>
-			<td height="27" valign="top">
-			<textarea  name="comments" cols="25" rows="6" class="velden" maxlength="1000"></textarea> </td>
-			</tr>
-			<tr>
-			<td height="27"><input name="submit" type="submit" class="verzend" value="Verzenden" /></td>
-			</tr>
-		</table>
-		</form>
-				
+		<div class="contact">
+		<form name="contactform">
+		<input>Voornaam</input>
+		<br>
+		<input>Achternaam</input>
+		<br>
+		<input>Email</input>
+		<br>
+		<input>Vraag?</input>
+		<br>
+		<button onclick = verstuur()>Verstuur!</button>
+		</div>
 		<div class="maps">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.742043466261!2d4.469734700000004!3d51.92041729999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a3f2470a65%3A0xd4bc43a2c385f1ed!2sWest-Kruiskade+26%2C+3014+AS+Rotterdam!5e0!3m2!1snl!2snl!4v1410907007978" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 		</div>

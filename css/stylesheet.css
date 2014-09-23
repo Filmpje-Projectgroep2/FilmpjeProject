@@ -82,6 +82,9 @@ body {
 	-webkit-box-shadow: 4px 2px  #222,  -4px 0 2px #222;
 	-moz-box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
 	box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
+	
+	border-radius:15px;
+	border: 3px solid black;
 }
 	
 /* De CSS die specifiek bij de homepage hoort */
