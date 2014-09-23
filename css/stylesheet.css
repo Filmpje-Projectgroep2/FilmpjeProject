@@ -49,20 +49,40 @@ body {
 	background-color: #3C1033; 
 }
 
+.home-knop:hover {
+	background-color: #5f2253;
+}
+
 .overzicht-knop { 
 	background-color: #505771;
+}
+
+.overzicht-knop:hover { 
+	background-color: #6f799b;
 }
 	
 .agenda-knop {
 	background-color: #6F9983;
 }
 
+.agenda-knop:hover {
+	background-color: #8ac7a7;
+}
+
 .acties-knop {
 	background-color: #96CE8D;
 }
-	
+
+.acties-knop:hover {
+	background-color: #bdf3b4;
+}
+
 .contact-knop {
 	background-color: #E79F7A;
+}
+
+.contact-knop:hover {
+	background-color: #feb894;
 }
 
 /* De CSS die bij elke pagina terugkomt onder de header, zoals het standaardtekstveldformaat */
@@ -82,9 +102,6 @@ body {
 	-webkit-box-shadow: 4px 2px  #222,  -4px 0 2px #222;
 	-moz-box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
 	box-shadow: 4px 0 2px #222,  -4px 0 2px #222;
-	
-	border-radius:15px;
-	border: 3px solid black;
 }
 	
 /* De CSS die specifiek bij de homepage hoort */
