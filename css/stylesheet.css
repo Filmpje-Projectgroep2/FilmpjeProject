@@ -145,10 +145,14 @@ body {
 }
 
 .filmoverzicht-blok img {
-	border: 1px solid black;
 	display: inline-block;
 	width: 193px;
 	height: 285px;
+	margin: 6px;
+}
+
+.filmoverzicht-blok img:hover {
+	opacity: 0.5;
 }
 
 .filmposters {
