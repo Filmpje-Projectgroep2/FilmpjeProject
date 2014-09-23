@@ -35,6 +35,12 @@ body {
 .nav li {
   	display: inline;
 }
+
+@media screen and (max width: 780px) {
+.nav li {
+	display: block;
+	}
+		}
 	
 .pull-left {
 	padding-left: 0px;
@@ -122,10 +128,19 @@ body {
 	display: inline-block;
 	margin-left: 30px;
 	padding-top: 25px;
+	width: auto;
+	max-width: 75;
 }
 
 .index-blok {
 	margin-top: 2%;
+}
+	
+.index-blok img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
 }
 	
 /* de CSS die specifiek bij het filmoverzicht hoort */
