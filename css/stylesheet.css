@@ -87,7 +87,7 @@ body {
 
 /* De CSS die bij elke pagina terugkomt onder de header, zoals het standaardtekstveldformaat */
 
-.contact-blok, .filmoverzicht-blok , .index-blok {
+.contact-blok, .filmoverzicht-blok , .index-blok, .films-tekst {
 	font-family: Verdana;
 	font-size: 12px;
 	width: 46%;
