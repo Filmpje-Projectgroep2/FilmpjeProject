@@ -1,0 +1,125 @@
+/* CSS Reset */
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+/* Lettertypes invoer */
+
+@font-face {
+    font-family: Yanone;
+    src: url("../fonts/Yanone.otf");
+}
+
+@font-face {
+    font-family: MyriadPro;
+    src: url("../fonts/MyriadPro.otf");
+}
+
+/* Code van elke pagina */
+
+body  {
+	font-family: MyriadPro;
+}
+
+#container{
+	min-width: 1200px;
+	width: 50%;
+    margin: 0 auto;
+}
+
+.top-balk {
+	height: 10px;
+	width: 100%;
+	background-image:url("../images/pattern.jpg"); 
+	margin: 0px;
+}
+	
+.navcentre {
+	margin:10px auto;
+	display:table;
+	padding:2px;
+	white-space:nowrap;
+}
+.navcentre ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:table-row;
+	white-space:nowrap;
+}
+
+.navcentre ul li{
+	display:table-cell;
+}
+
+.navcentre ul a{
+	display: block;
+	padding: 4px 10px;
+	text-decoration: none;
+	font-family: Yanone;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: black;
+}
+
+.navcentre ul a:hover{
+	border-bottom: 2px solid black;
+}
+
+.logo{
+	max-height: 100px;
+	max-width: 150px;
+	margin-right: 400px;
+}
+
+.box {
+	width: 280px;
+    text-align: left;
+	margin: 10% auto;
+}
+
+.span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*.onderbalk{
+	height: 50px;
+	background-image:url("../images/pattern.jpg");
+	float: bottom;
+} */
+
+/* Alles wat van toepassing is op de homepage */
+
+.box {
+	float: left;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.MidPosterHome{
+	float: right;
+	margin: 10% auto;
+	padding-right: 6.5%;	
+}
+
+.Top10Home{
+	margin: 9% auto;
+	float:right;
+	top: 25%;
+	left: 80%;
+}
+
+.TopListHome{
+	font-family: MyriadPro;
+	font-size:200%
+}
+
+
+
+
+
+
+
