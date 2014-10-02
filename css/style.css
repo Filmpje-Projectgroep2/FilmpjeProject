@@ -117,45 +117,7 @@ body  {
 	font-size:200%
 }
 
-.filmoverzicht-blok  img{
-	width: 214px;
-	height: 317px;
-}
 
-/* CSS van toepassing op detailpagina */
-
-.kijkwijzer {
-	width: 30px;
-	float: right;
-	margin-top: 20px;
-}
-
-.filmtitel {
-	float: left;
-}
-
-.beschrijving-film {
-	margin-top: 10px;
-	float: left;
-	}
-
-.films-tekst {
-	float: right;
-	width: 70%;
-}
-
-.detailpagina-poster {
-	float: left;
-	width: 300px;
-}
-
-.detailpagina-rij1 {
-	height: 500px;
-}
-
-.trailer {
-	float: right;
-}
 
 
 
