@@ -85,13 +85,31 @@ body  {
     vertical-align: middle;
 }
 
-/*.onderbalk{
-	height: 50px;
-	background-image:url("../images/pattern.jpg");
-	float: bottom;
-} */
+.onderbalk{
+	width: 100%;
+	position: relative;
+	bottom: 30px;
+	height: 40px;
+	margin-top: 25px;
+	background: url("../images/pattern.jpg");
+}
+
 
 /* Alles wat van toepassing is op de homepage */
+
+@@ -117,7 +122,15 @@ body  {
+	font-size:200%
+}
+
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 30px auto;
+	height: 40px;
+	margin-top: 42%;
+	background: #CCC;
+	z-index: 1;
+}
 
 .box {
 	float: left;
@@ -117,7 +135,47 @@ body  {
 	font-size:200%
 }
 
+/* CSS van toepassing op filmoverzicht */
 
+.filmoverzicht-blok  img{
+	width: 214px;
+	height: 317px;
+}
+
+/* CSS van toepassing op detailpagina */
+
+.kijkwijzer {
+	width: 30px;
+	float: right;
+	margin-top: 20px;
+}
+
+.filmtitel {
+	float: left;
+}
+
+.beschrijving-film {
+	margin-top: 10px;
+	float: left;
+	}
+
+.films-tekst {
+	float: right;
+	width: 70%;
+}
+
+.detailpagina-poster {
+	float: left;
+	width: 300px;
+}
+
+.detailpagina-rij1 {
+	height: 500px;
+}
+
+.trailer {
+	float: right;
+}
 
 
 
