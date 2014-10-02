@@ -85,11 +85,16 @@ body  {
     vertical-align: middle;
 }
 
-/*.onderbalk{
-	height: 50px;
-	background-image:url("../images/pattern.jpg");
-	float: bottom;
-} */
+
+.onderbalk{
+	width: 100%;
+	position: relative;
+	bottom: 30px;
+	height: 40px;
+	margin-top: 25px;
+	background: url("../images/pattern.jpg");
+}
+
 
 /* Alles wat van toepassing is op de homepage */
 
@@ -117,7 +122,15 @@ body  {
 	font-size:200%
 }
 
-
+.footer{
+	width: 100%;
+	position: fixed;
+	bottom: 30px auto;
+	height: 40px;
+	margin-top: 42%;
+	background: #CCC;
+	z-index: 1;
+}
 
 
 
