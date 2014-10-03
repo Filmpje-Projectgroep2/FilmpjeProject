@@ -162,6 +162,7 @@ body  {
 .films-tekst {
 	float: right;
 	width: 70%;
+	margin-bottom: 30px;
 }
 
 .detailpagina-poster {
