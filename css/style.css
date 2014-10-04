@@ -21,26 +21,33 @@ html,body {
 
 body  {
 	font-family: MyriadPro;
+	/*background-color: #BCBCBC;*/
 }
 
 #container{
 	min-width: 1200px;
 	width: 50%;
     margin: 0 auto;
+	background-color: white;
+	border-radius: 8px;
+	height: 100%;
 }
+
+#container1{
+	min-width: 1200px;
+	width: 50%;
+    margin: 0 auto;
+	background-color: white;
+	border-radius: 8px;
+	height: 1100px;
+}
+
 
 .top-balk, .top-balk2 {
 	height: 10px;
 	width: 100%;
 	margin: 0px;
-}
-	
-.top-balk {
-	background-image:url("../images/pattern.jpg");
-}
-
-.top-balk2 {
-	background-image:url("../images/pattern2.jpg"); 
+	background-color: #6d0000;
 }
 	
 .navcentre {
@@ -81,12 +88,6 @@ body  {
 	margin-right: 400px;
 }
 
-.box {
-	width: 280px;
-    text-align: left;
-	margin: 10% auto;
-}
-
 .span {
     display: inline-block;
     vertical-align: middle;
@@ -94,14 +95,8 @@ body  {
 
 .onderbalk {
 	width: 100%;
-	bottom: 30px;
-	height: 40px;
-	margin-top: 25px;
-	position: relative;
-}
-
-.onderbalk { 
-	background: url("../images/pattern.jpg");
+	height: 250px;
+	background-color: #857F80;
 }
 
 
@@ -125,24 +120,27 @@ body  {
 	float: left;
 	font-size: 14px;
 	text-align: justify;
+	width: 280px;
+	margin-top: 80px;
 }
 
+
 .MidPosterHome{
-	float: right;
-	margin: 10% auto;
-	padding-right: 6.5%;	
+	display: inline;	
+	margin-left: 35px;
+	margin-right: 50px;
 }
 
 .Top10Home{
-	margin: 9% auto;
-	float:right;
-	top: 25%;
-	left: 80%;
 }
 
 .TopListHome{
 	font-family: MyriadPro;
 	font-size:200%
+}
+
+.home-content1 {
+	display: inline-block;
 }
 
 /* CSS van toepassing op filmoverzicht */
