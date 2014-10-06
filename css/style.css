@@ -101,16 +101,16 @@ body  {
     border: 0 none;
     font-size: 25px;
     padding: 2px 10px;
-    width: 145px;
+    width: 160px;
 	font-family: Yanone;
 	cursor: pointer; cursor: hand;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent:  0,01px;
     *width: 350px;
     *background: #58B14C;
 }
 
-#film-dropdown a:hover{
-	border-bottom: 2px solid black;
-	}
 
 
 /* Alles wat van toepassing is op de homepage */
