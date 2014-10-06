@@ -8,23 +8,19 @@ html,body {
 /* Lettertypes invoer */
 
 @font-face {
-    font-family: "Yanone";
-    src: url("../fonts/Yanone.otf") format ('opentype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: Yanone;
+    src: url("../fonts/Yanone.otf");
 }
 
 @font-face {
-    font-family: 'MyriadPro';
-    src: url("../fonts/MyriadPro.OTF") format ('opentype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: MyriadPro;
+    src: url("../fonts/MyriadPro.otf");
 }
 
 /* Code van elke pagina */
 
 body  {
-	font-family: 'MyriadPro';
+	font-family: MyriadPro;
 	background: linear-gradient(#6d0000, black);
 }
 
