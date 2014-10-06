@@ -225,6 +225,15 @@ body  {
 	width: 200px;
 } */
 
+#film-dropdown {
+    border: 0 none;
+    font-size: 25px;
+    padding: 2px 10px;
+    width: 145px;
+	font-family: Yanone;
+    *width: 350px;
+    *background: #58B14C;
+}
 
 
 
