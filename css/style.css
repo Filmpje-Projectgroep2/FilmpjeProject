@@ -122,6 +122,19 @@ input[type=image] {
 
 /* Alles wat van toepassing is op de homepage */
 
+.Top10Home ol li {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:table-row;
+	white-space:nowrap;
+}
+
+.Top10Home ol li a {
+	text-decoration: none;
+	
+}
+
 @@ -117,7 +122,15 @@ body  {
 	font-size:200%
 }
@@ -214,14 +227,6 @@ input[type=image] {
 	margin-right: 2px;
 }
 
-.rating {
-	float: right;
-	margin-left: 2px;
-	height: 50px;
-	margin-top: 8px;
-	margin-right: 5px;
-}
-
 .filmtitel {
 	float: left;
 }
@@ -282,4 +287,14 @@ input[type=image] {
 
 
 
-
+/*contact pagina*/
+.contact{
+			padding-bottom: 100%;
+			margin-bottom: -100%;
+			display:inline-block;
+			}
+	
+	#adres{
+	margin:50px;
+	}
+ 
