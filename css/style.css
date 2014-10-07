@@ -214,6 +214,14 @@ input[type=image] {
 	margin-right: 2px;
 }
 
+.rating {
+	float: right;
+	margin-left: 2px;
+	height: 50px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+
 .filmtitel {
 	float: left;
 }
