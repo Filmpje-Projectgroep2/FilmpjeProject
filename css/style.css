@@ -269,14 +269,14 @@ input[type=image] {
 	margin-right: 5px;
 }
 
-/*contact pagina*/
+/* CSS die van toepassing is op de contact pagina */
 .contact{
-			padding-bottom: 100%;
-			margin-bottom: -100%;
-			display:inline-block;
-			}
+	padding-bottom: 100%;
+	margin-bottom: -100%;
+	display:inline-block;
+}
 	
-	#adres{
+#adres{
 	margin:50px;
-	}
+}
  
