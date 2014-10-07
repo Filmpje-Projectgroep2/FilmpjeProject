@@ -269,12 +269,18 @@ input[type=image] {
 
 /* CSS die van toepassing is op de contact pagina */
 .contact{
-	padding-bottom: 100%;
-	margin-bottom: -100%;
-	display:inline-block;
+
 }
 	
 #adres{
-	margin:50px;
+	
+}
+
+#twitter{
+	float:right;
+	position: relative;
+    top: -350px;
+	
+}
 }
  
