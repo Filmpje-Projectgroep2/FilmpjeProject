@@ -145,6 +145,10 @@ input[type=image] {
 	display: inline-block;
 	vertical-align: top;
 	width: 200px;
+	margin-left: 15px;
+	font-family: MyriadPro;
+	font-size: 125%;
+	padding:0px;
 }
 
 .Top10Home ol{
@@ -155,12 +159,6 @@ input[type=image] {
 .Top10Home h3{
 	margin-top: 0px;
 	font-size: 130%;
-}
-
-.TopListHome{
-	font-family: MyriadPro;
-	font-size: 125%;
-	padding:0px;
 }
 
 .home-content1 {
