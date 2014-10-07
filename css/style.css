@@ -157,10 +157,12 @@ input[type=image] {
 .Top10Home {
 	display: inline-block;
 	vertical-align: top;
+	width: 200px;
 }
 
-.Top10Home ul{
+.Top10Home ol{
 	padding: 0px;
+	margin-top: 0px;
 }
 
 .Top10Home h3{
@@ -170,8 +172,7 @@ input[type=image] {
 
 .TopListHome{
 	font-family: MyriadPro;
-	font-size: 165%;
-	text-align: justify;
+	font-size: 125%;
 	padding:0px;
 }
 
