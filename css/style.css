@@ -331,5 +331,13 @@ input[type=image] {
     top: -350px;
 	
 }
+
+ .Top10Home ol li a {
+	text-decoration: none;
+	
 }
- 
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:grey }
