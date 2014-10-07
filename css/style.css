@@ -315,6 +315,18 @@ input[type=image] {
 		padding: 3%;
 }
 
+#container1{
+	min-width: 1200px;
+	width: 50%;
+    margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px;
+	height: 1100px;
+}
 
 /* CSS die van toepassing is op de contact pagina */
 .contact{
