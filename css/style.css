@@ -101,8 +101,7 @@ body  {
 	font-family: Yanone;
 	cursor: pointer; cursor: hand;
 	-webkit-appearance: none;
-	-moz-appearance: none;
-	text-indent:  0,01px;
+	-moz-win-exclude-glass;
     *width: 350px;
     *background: #58B14C;
 }
