@@ -126,18 +126,39 @@ input[type=image] {
 	font-size:200%
 }
 
-.twitter{
-	background-image:url("../images/twitter.png");
+.socialmedia {
 	margin-bottom: 15px;
+}
+
+.socialmedia div {
 	width: 45px;
 	height: 45px;
+	float: left;
+	margin-right: 10px;
+}
+
+.twitter{
+	background-image:url("../images/twitter.png");
 }
 
 .twitter:hover{
 	background-image:url("../images/twitter-hover.png");
-	margin-bottom: 15px;
-	width: 45px;
-	height: 45px;
+}
+
+.facebook{
+	background-image:url("../images/facebook.png");
+}
+
+.facebook:hover{
+	background-image:url("../images/facebook-hover.png");
+}
+
+.youtube{
+	background-image:url("../images/youtube.png");
+}
+
+.youtube:hover{
+	background-image:url("../images/youtube-hover.png");
 }
 
 .box {
