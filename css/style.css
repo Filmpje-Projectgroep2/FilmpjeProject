@@ -169,6 +169,23 @@ input[type=image] {
 	margin-left: 30px;
 }
 
+ .Top10Home ol li a {
+	text-decoration: none;
+}
+
+.Top10Home ol li a:hover{
+	color: grey;
+}
+
+.Top10Home ol li a:link{
+	color: black;
+}
+
+.Top10Home ol li a:hover, a:active {
+text-decoration: none; color:grey
+}
+
+
 .MidPosterHome{
 	display: inline;	
 	margin-left: 35px;
@@ -304,7 +321,6 @@ input[type=image] {
 /* CSS die van toepassing is op de Agenda pagina */
 .tablebioscoop{
 	font-size: 120%;
-	
 }
 
 .zaal{
@@ -344,13 +360,4 @@ input[type=image] {
 	
 }
 
- .Top10Home ol li a {
-	text-decoration: none;
-	
-	
-}
-a:link  {color: black;}
-a:visited { text-decoration: none; color:black; }
-a:hover { text-decoration: none; color:grey; }
-a:focus { text-decoration: none; color:yellow; }
 
