@@ -177,14 +177,17 @@ input[type=image] {
 	color: grey;
 }
 
+.Top10Home ol li a:visited{
+	color: black;
+}
+
 .Top10Home ol li a:link{
 	color: black;
 }
 
 .Top10Home ol li a:hover, a:active {
-text-decoration: none; color:grey
+	text-decoration: none; color:grey
 }
-
 
 .MidPosterHome{
 	display: inline;	
