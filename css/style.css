@@ -3,6 +3,7 @@
 html,body {
     margin:0;
     padding:0;
+	border: 0;
 }
 
 /* Lettertypes invoer */
@@ -173,6 +174,10 @@ input[type=image] {
 	text-decoration: none;
 }
 
+.Top10Home ol li a:visited{
+	color: black;
+}
+
 .Top10Home ol li a:hover{
 	color: grey;
 }
@@ -280,11 +285,30 @@ text-decoration: none; color:grey
 	border-radius: 8px;
 }
 
+.detailpagina-rij1 {
+	height: 75px;
+	width: 1183px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.detailpagina-rij2 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	width: 1181px;
+	height: 480px;
+}
+
 .kijkwijzer {
 	width: 30px;
 	float: right;
 	margin-top: 20px;
 	margin-right: 2px;
+}
+
+.detailpagina-titel  h2{
+	font-size: 25px;
 }
 
 .filmtitel {
@@ -306,33 +330,6 @@ text-decoration: none; color:grey
 	padding: 5px;
 }
 
-.beschrijving-film {
-	margin-top: 10px;
-	float: left;
-	}
-
-.films-tekst {
-	float: right;
-	width: 70%;
-	height: 450px;
-	margin-bottom: 20px;
-}
-
-.detailpagina-poster {
-	float: left;
-	width: 300px;
-	border-radius: 5px;
-}
-
-.detailpagina-rij1 {
-	height: 500px;
-}
-
-.trailer {
-	display: block;
-	text-align: right;
-}
-
 .rating {
 	float: right;
 	margin-left: 2px;
@@ -341,7 +338,56 @@ text-decoration: none; color:grey
 	margin-right: 5px;
 }
 
+.detailpagina-poster {
+	display: inline;
+	height: 480px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.trailer {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 853px;
+}
+
+.beschrijving-film {
+	width: 855px;
+	float: right; 
+}
+
+.detailpagina-rij3 h2{
+	margin-top: 0px;
+}
+
+.detail-agenda {
+	width: 324px;
+	float: left;
+}
+
+.detail-agenda td{
+	text-align: center;
+	margin: 5px;
+	width: 50px;
+	border: 2px solid #c6c3bd;
+	height: 25px;
+}
+
+.detail-agenda table {
+    border: 2px solid black;
+    border-collapse: collapse;
+	border-radius: 5px;
+	background-color: #dcd9d2;
+}
+
+.tijd:hover {
+	background-color: #c6c3bd;
+	cursor: pointer;
+}
+
 /* CSS die van toepassing is op de Agenda pagina */
+
 .tablebioscoop{
 	font-size: 120%;
 	margin-right: auto;
