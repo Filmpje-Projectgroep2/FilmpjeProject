@@ -1,5 +1,5 @@
 body, html {
-	max-width: 480px;
+	max-width: 360px;
 	min-width: 320px;
 	margin: initial;
 }
@@ -47,14 +47,21 @@ hr {
 	display: none;
 }
 
-.MidPosterHome {
-	display: block;
-	margin-left: auto;
+.sliderposter { 
+	width: 95%; 
+	margin-top: 15px;
+	margin-left: 8px;
 	margin-right: auto;
+	border-radius: 5px;
 }
 
-.sliderposter { 
-	width: 80%; 
-	margin-left: auto;
-	margin-right: auto;
+.Top10Home {
+	display: initial;
+	vertical-align: initial;
+	width: 95%;
+	text-align: center;
+	margin-left: 15px;
+	font-family: MyriadPro;
+	font-size: 125%;
+	padding:0px;
 }
