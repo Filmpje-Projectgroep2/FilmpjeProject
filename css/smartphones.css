@@ -1,0 +1,60 @@
+body, html {
+	max-width: 480px;
+	min-width: 320px;
+	margin: initial;
+}
+
+#container {
+	margin: 5px auto;
+	min-width: initial;
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 5px;
+	overflow:hidden;
+}
+
+.navcentre {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.navcentre ul li{
+	display: initial;
+}
+
+.navcentre ul {
+	display: initial;
+}
+
+.logo {
+	margin: 0px;
+}
+
+hr {	
+	display: none;
+}
+
+/* Mobile Homepage */
+
+.home-content1 {
+	display: initial;
+	vertical-align: initial;
+	margin-top: 50px;
+}
+
+.box {
+	display: none;
+}
+
+.MidPosterHome {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sliderposter { 
+	width: 80%; 
+	margin-left: auto;
+	margin-right: auto;
+}
