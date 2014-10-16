@@ -372,25 +372,99 @@ input[type=image] {
 
 /* CSS die van toepassing is op de Agenda pagina */
 
-.tablebioscoop{
-	font-size: 120%;
-	margin-right: auto;
-	margin-left: auto;
+.agendabutton{
+	width: 80%;
+	margin: 0 auto;
 }
 
-.zaal{
-	min-width: 250px;
+.agendabuttons{
+	display:inline-block;
+	min-width: 100px;
+	width: 130px;
+	padding:5px 10px;
+	border: 2px solid #4F0000;
+	border-radius: 25px;
+	background: none;
+	
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 2px #4F0000;
 }
 
-.tablebioscoop tr td{
-	padding: 3%;
+.agendabuttons:hover, .agendabuttons:focus, .agendabuttons:active {
+box-shadow: 0 0 12px #4F0000;
 }
 
-.Dagen{
-	position: relative;
-	top: 250px;
-	left: 20px;
+.AgendaZaal1{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	height: 80%;
+	margin-top: 30px;
+	margin-left: 20px;
+	font-family: MyriadPro;
+	font-size: 125%;
+	padding:0px;
+	border:0px solid red;
+}
 
+.AgendaZaal2{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	height: 80%;
+	margin-top: 30px;
+	margin-left: 55px;
+	font-family: MyriadPro;
+	font-size: 125%;
+	padding:0px;
+	border:0px solid blue;
+}
+
+.AgendaZaal3{
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	height: 80%;
+	margin-top: 30px;
+	margin-left: 55px;
+	font-family: MyriadPro;
+	font-size: 125%;
+	padding:0px;
+	border:0px solid green;
+}
+
+.FilmGegevens{
+	border: 0px solid black;
+	height: 150px;
+	margin-bottom: 3px;
+}
+
+.FilmTijden{
+	border: 0px solid black;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.FilmImageAgenda{
+	float: left;
+	max-width: 120px;
+	max-Height: 150px;
+}
+
+.FilmTekst{
+	margin-left: 110px;
+	font-size: 90%;
+	padding: 10px;
+}
+
+.TijdenButtons{
+	border: 2px solid #4F0000;
+	border-radius: 25px;
 }
 
 #container1{
