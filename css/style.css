@@ -403,7 +403,7 @@ box-shadow: 0 0 12px #4F0000;
 	display: inline-block;
 	vertical-align: top;
 	width: 28%;
-	height: 80%;
+	height: 82%;
 	margin-top: 30px;
 	margin-left: 20px;
 	font-family: MyriadPro;
@@ -416,7 +416,7 @@ box-shadow: 0 0 12px #4F0000;
 	display: inline-block;
 	vertical-align: top;
 	width: 28%;
-	height: 80%;
+	height: 82%;
 	margin-top: 30px;
 	margin-left: 55px;
 	font-family: MyriadPro;
@@ -429,7 +429,7 @@ box-shadow: 0 0 12px #4F0000;
 	display: inline-block;
 	vertical-align: top;
 	width: 28%;
-	height: 80%;
+	height: 82%;
 	margin-top: 30px;
 	margin-left: 55px;
 	font-family: MyriadPro;
@@ -452,19 +452,25 @@ box-shadow: 0 0 12px #4F0000;
 
 .FilmImageAgenda{
 	float: left;
-	max-width: 120px;
+	max-width: 100px;
 	max-Height: 150px;
+	min-Height: 150px;
 }
 
 .FilmTekst{
 	margin-left: 110px;
-	font-size: 90%;
-	padding: 10px;
+	font-size: 80%;
+	font-family: MyriadPro;
 }
 
 .TijdenButtons{
 	border: 2px solid #4F0000;
 	border-radius: 25px;
+}
+
+.FilmTitel{
+	font-size: 125%;
+	font-weight: bold;	
 }
 
 #container1{
@@ -477,7 +483,7 @@ box-shadow: 0 0 12px #4F0000;
 	padding: 20px;
 	background-color: white;
 	border-radius: 8px;
-	height: 1100px;
+	height: 1400px;
 }
 
 /* CSS die van toepassing is op de contact pagina */
