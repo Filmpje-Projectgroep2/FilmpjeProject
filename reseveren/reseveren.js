@@ -122,12 +122,11 @@ function reserveer(e){
 	
 	var totaalprijsweergeven = document.getElementById('totaal');
 	totaalprijsweergeven.value=totaalprijs;
-	var stoelenweergeven = document.getElementById('stoelen');
-	stoelenweergeven.value=stoelnummers;
+	
 	
 	
 	document.getElementById('test2').innerHTML += "<br> Uw stoel en rij nummer: "+stoelnummer;
-	document.getElementById('test').innerHTML = 'Totaalprijs:' + totaalprijs;
+	
 	
 	return totaalprijs;
 	
