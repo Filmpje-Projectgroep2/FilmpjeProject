@@ -1,5 +1,7 @@
 var totaalprijs = 0;
 var stoelnummers="Uw rij en stoelnummer: ";
+var gereserveerd=0;
+var vrij=1;
 
 var zaal2=
 [
@@ -74,12 +76,15 @@ function maak_leegte()
 function maak_stoel(klasse,rn,sn,prijs)
 {
 	var plaats = document.createElement("button")
+	
 	plaats.type = "button";
-	plaats.id="stoel_"+rn+"_"+sn;
+	plaats.id=sn+" op rij nummer: " + rn;
+	plaats.name=klasse;
+	
 	
 	plaats.addEventListener("click",reserveer,false)
 	plaats.value=prijs;
-
+	
 	
 	
 	var Klasse;
@@ -97,6 +102,7 @@ function maak_stoel(klasse,rn,sn,prijs)
 	
 	return plaats;
 	
+	
 }	
 
 function reserveer(e){
@@ -105,19 +111,50 @@ function reserveer(e){
 	if(event.target.className == "klasse_gereserveerd"){
 	alert("stoel is al gereserveerd")
 	}
+	
+	
 	else {
 	var plaats=e.target;
 	var prijs=e.target.Value;
-	var klasse;
+	var klasse = plaats.name;
 	var stoel_prijs=plaats.value;
+	var Klasse;
 	
 	
+	
+	if (event.target.className=="gereserveerd"){
+	
+	Klasse="klasse_"+klasse;
+	plaats.setAttribute("class",Klasse);
+	totaalprijs  =Number(totaalprijs)-Number(stoel_prijs) ;
+	
+	totaalprijsweergeven = document.getElementById('totaal');
+	totaalprijsweergeven.value=totaalprijs;
+	localStorage.removeItem(stoelnummer);
+	if (event.target.className=="klasse_1"){
+		plaats.style.background = "#c00000";
+	}
+	else{ if(event.target.className=="klasse_2"){
+	plaats.style.background ="#f79646";}
+	
+	else{
+	plaats.style.background ="#4e81bd";
+	}
+	}
+	
+	
+	
+	
+	return totaalprijs;
+	
+	}
+	else{
+	
+	plaats.className="gereserveerd";
 	plaats.style.background = "#0f0";
 	stoelnummer = plaats.id;
+	rijnummer = plaats.name;
 	localStorage.setItem(stoelnummer,"bezet");
-	
-	
-	
 	totaalprijs  =Number(stoel_prijs) +Number(totaalprijs);
 	
 	var totaalprijsweergeven = document.getElementById('totaal');
@@ -125,12 +162,18 @@ function reserveer(e){
 	
 	
 	
-	document.getElementById('test2').innerHTML += "<br> Uw stoel en rij nummer: "+stoelnummer;
+	document.getElementById('test').innerHTML += "<br> Uw stoelnummer is "+stoelnummer+".";
 	
 	
 	return totaalprijs;
+	}
 	
 	
+	
+	
+	
+	
+		
 	
 	}
 
