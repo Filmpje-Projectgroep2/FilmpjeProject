@@ -1,4 +1,5 @@
 var totaalprijs = 0;
+var stoelnummers="Uw rij en stoelnummer: ";
 
 var zaal2=
 [
@@ -51,9 +52,9 @@ for (var rn = 0; rn <zaal.length ; rn++)
 			switch(zaal[rn][sn])
 			{
 				case 0: plaats = maak_leegte() ;break;
-				case 1: plaats = maak_stoel(1,rn,sn,13.50); break;
-				case 2: plaats = maak_stoel(2,rn,sn,10.50); break;
-				case 3: plaats = maak_stoel(3,rn,sn,9.00); break;
+				case 1: plaats = maak_stoel(1,rn+1,sn+1,13.50); break;
+				case 2: plaats = maak_stoel(2,rn+1,sn+1,10.50); break;
+				case 3: plaats = maak_stoel(3,rn+1,sn+1,9.00); break;
 			}
 			document.getElementById("DIV_vliegtuig").appendChild(plaats);
        }
@@ -66,7 +67,7 @@ function maak_leegte()
 	var plaats = document.createElement("button");
 	plaats.type = "button";
 	plaats.setAttribute("class","leeg");
-	
+	plaats.disabled = true;
 	return plaats;
 }
 
@@ -98,7 +99,7 @@ function maak_stoel(klasse,rn,sn,prijs)
 	
 }	
 
-function reserveer(e,totaalprijs){
+function reserveer(e){
 
 	
 	if(event.target.className == "klasse_gereserveerd"){
@@ -115,12 +116,29 @@ function reserveer(e,totaalprijs){
 	stoelnummer = plaats.id;
 	localStorage.setItem(stoelnummer,"bezet");
 	
-	alert (stoel_prijs);
-	var totaalprijs  =stoel_prijs +totaalprijs;
+	
+	
+	totaalprijs  =Number(stoel_prijs) +Number(totaalprijs);
+	
+	var totaalprijsweergeven = document.getElementById('totaal');
+	totaalprijsweergeven.value=totaalprijs;
+	var stoelenweergeven = document.getElementById('stoelen');
+	stoelenweergeven.value=stoelnummers;
+	
+	
+	document.getElementById('test2').innerHTML += "<br> Uw stoel en rij nummer: "+stoelnummer;
+	document.getElementById('test').innerHTML = 'Totaalprijs:' + totaalprijs;
+	
 	return totaalprijs;
 	
 	
+	
 	}
+
+	
+	
+	
+   
 }
 
 function lees_Storage(){
@@ -157,13 +175,25 @@ function start()
 
 function wissen()
 {
-	alert("alles word gewist!!!");
+	var r = confirm("Wil je alles wissen?");
+if (r == true) {
+    location.reload();
 	localStorage.clear();
+} else {
+    x = "You pressed Cancel!";
+}
+	
 }
 
-function check(totaalprijs){
-	alert(totaalprijs);
+function afrekenen()
+{
+	var r = confirm("Wilt u afrekenen?");
+if (r == true) {
+    alert("U heeft een bedrag van :"+totaalprijs+" euro afgerekend!");
+} else {
+    x = "You pressed Cancel!";
 }
-
+	
+}
 
 

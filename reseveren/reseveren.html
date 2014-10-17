@@ -12,9 +12,16 @@ button {width:25px;height:25px;margin:2px;}
 #wis{
 width:50px;
 }
+#afrekenen{
+width:100px;
+}
+
+#totaalprijs{
+width:100px;
+}
 </style>
 </head>
-<script src="vliegtuigjs.js">
+<script src="reseveren.js">
 </script>
 <body onload="start()">
 <div id ="container">
@@ -23,9 +30,17 @@ width:50px;
 
 <form id="FORM_zaal">
 <div id="DIV_vliegtuig"></div>
+
 </form>
 </div>
+
 <button onclick = "wissen()" id="wis">wis!</button>
-<button onclick = "check(totaalprijs)" >totaalprijs!</button>
+
+<br>Totaalprijs:</br>
+<input type="text" name="totaal" id="totaal" readonly="true"/><button onclick = "afrekenen()" id="afrekenen">Afrekenen</button>
+<br>RijNummer + StoelNummer:</br>
+<input type="text" name="totaal" id="stoelen" readonly="true"/>
+<div id="test"></div>
+<div id="test2"></div>
 </body>
 </html>
