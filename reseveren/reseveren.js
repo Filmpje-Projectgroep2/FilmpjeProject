@@ -2,6 +2,7 @@ var totaalprijs = 0;
 var stoelnummers="Uw rij en stoelnummer: ";
 var gereserveerd=0;
 var vrij=1;
+var stoelengereseveerd="niks";
 
 var zaal2=
 [
@@ -127,7 +128,12 @@ function reserveer(e){
 	Klasse="klasse_"+klasse;
 	plaats.setAttribute("class",Klasse);
 	totaalprijs  =Number(totaalprijs)-Number(stoel_prijs) ;
+	var node = document.getElementById('test');
+	while (node.hasChildNodes()) {
+    node.removeChild(node.firstChild);
+}
 	
+	schrijf();
 	totaalprijsweergeven = document.getElementById('totaal');
 	totaalprijsweergeven.value=totaalprijs;
 	localStorage.removeItem(stoelnummer);
@@ -160,9 +166,12 @@ function reserveer(e){
 	var totaalprijsweergeven = document.getElementById('totaal');
 	totaalprijsweergeven.value=totaalprijs;
 	
+	var node = document.getElementById('test');
+	while (node.hasChildNodes()) {
+    node.removeChild(node.firstChild);
+}
 	
-	
-	document.getElementById('test').innerHTML += "<br> Uw stoelnummer is "+stoelnummer+".";
+	schrijf();
 	
 	
 	return totaalprijs;
@@ -229,13 +238,30 @@ if (r == true) {
 
 function afrekenen()
 {
+
+if(totaalprijs<=0){
+alert("Bestel eerst iets.")
+}
+else{
 	var r = confirm("Wilt u afrekenen?");
 if (r == true) {
     alert("U heeft een bedrag van :"+totaalprijs+" euro afgerekend!");
+	location.reload();
 } else {
     x = "You pressed Cancel!";
 }
-	
+}	
 }
+
+function schrijf(){
+
+	
+	
+	var input = document.getElementsByClassName("gereserveerd");
+	for ( var i = 0; i < input.length; i++){
+	document.getElementById('test').innerHTML += "<br> Uw stoelnummer is "+ input[i].id+".";
+}
+}
+	
 
 
