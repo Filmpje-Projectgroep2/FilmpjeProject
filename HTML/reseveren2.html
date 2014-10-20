@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+
 <style>
 .leeg {border:0px solid #eff; background:#fff}
 .klasse_1{background:#c00000;}
@@ -58,37 +58,19 @@ background:transparent;
 
 </style>
 <script src="reseveren.js">
-
+var x = document.cookie;
+document.getElementById('titel').innerHTML = x;
 
 </script>
 </head>
 
 
-<body onload="start();local()";>
+<body onload="start()">
 
-<div class="top-balk"></div>
-<div id="container">
-<!-- Navigatie -->
-    <div class="navcentre">
-	  <ul>
-		  <li><a href="../index.html"><img src="../images/Logo.png" class="logo"></a></li>
-		  <li><a href="../index.html">Home</a></li>
-		  <li><select id="film-dropdown" onchange="window.location=this.value" style="-webkit-appearance: none;">
-                <option>FILM OVERZICHT</option>
-				<option value="film_overzicht.html">ACTUELE FILMS</option>
-				<option value="klassiekefilms.html">KLASSIEKE FILMS</option>
-				<option value="Verwacht.html">VERWACHT</option>
-				</select></li>
-		  <li><a href="bioscoopagenda.html">Bioscoopagenda</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-		<form name="zoeken" method="post" action="zoekresultaten.php">
-		<input name="search" type="search" size="25" maxlength="25" />
-		<input type="image" src="../images/searchbutton.png" alt="Search">
-	  </ul>
-    </div><!-- TopKnoppen -->
-<hr>
 
 <div id="titel"></div>
+
+<hr>
 <div id = "overschrijven">
 <form id="FORM_zaal">
 <center>
@@ -121,7 +103,7 @@ background:transparent;
 
 <div id="ETICKET"><br>Met deze E-Ticket heeft u recht op de stoelen die hierboven staan weergegeven.<a href="#"><img src="qr_code.jpg" class="logo"></a></div>
 
-</div>
+
 
 </hr>
 

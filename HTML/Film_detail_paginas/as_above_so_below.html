@@ -4,7 +4,29 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
-<body>
+<style>
+#reseveren{
+	
+	display:none;
+}
+
+#detailpagina{
+	
+	display:inline;
+}
+</style>
+<script language="javascript" type="text/javascript">
+var link ="As above so below"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+}
+</script>
+
+
+<body onload="local()">
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -27,17 +49,20 @@
 	  </ul>
     </div>
 	<hr></hr>
-
-	<div class="detailpagina">
+	<center><div class="filmtitel" id="titel"><h2>As above so below</h2></div><br></center>
+	<iframe src="../reseveren2.html"  id ="reseveren" width="1000" height="800"></iframe>
+	<div class="detailpagina" id="detailpagina">
 		<div class="detailpagina-rij1">
 				<div class="detailpagina-titel">
-					<div class="filmtitel"><h2>As above so below</h2></div>
+					
 					<img src="../../images/kijkwijzers/16.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/angst.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/geweld.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 					<a href="http://www.imdb.com/title/tt2870612/?ref_=nv_sr_1"><img src="../../images/IMDB_Rating/asabovesobelowrating.png" class="rating"></a>
-					<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+					
+					
+					<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 				</div>
 		</div>
 		

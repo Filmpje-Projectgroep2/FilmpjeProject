@@ -1,7 +1,7 @@
 var totaalprijs = 0;
 
 var gereserveerd=0;
-
+//var idd=document.getElementById(key);
 
 
 
@@ -238,7 +238,7 @@ function is_gereserveerd(plaats){
 
 function start()
 {
-
+	
 	lees_Storage();
 	plaats_stoelen();
 }
@@ -286,6 +286,13 @@ function schrijf(){
 	 
 }
 }
+function local(){
 	
+	
+	sessionStorage.getItem("titel");
+	var x = sessionStorage.getItem("titel");
+	
+	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"</center>";
+}
 
 

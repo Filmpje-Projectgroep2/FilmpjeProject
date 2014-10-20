@@ -4,7 +4,16 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
-<body>
+<body onload="local()">
+<script>
+var link ="Winter Sleep"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+}
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -37,7 +46,7 @@
 				<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 				<img src="../../images/kijkwijzers/drugs.png" class="kijkwijzer">
 				<a href="http://www.imdb.com/title/tt2758880/?ref_=nv_sr_1"><img src="../../images/IMDB_Rating/wintersleeprating.png" class="rating"></a>
-				<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+				<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 			</div>
 		</div>
 		
