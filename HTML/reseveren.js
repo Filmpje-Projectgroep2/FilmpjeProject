@@ -1,5 +1,5 @@
 var totaalprijs = 0;
-
+var x = " Film:" + sessionStorage.getItem("titel");
 var gereserveerd=0;
 //var idd=document.getElementById(key);
 
@@ -49,18 +49,6 @@ var zaal=
 ];
 
 
-function WriteCookie()
-{
-   if( document.myform.customer.value == "" ){
-      alert("Enter some value!");
-      return;
-   }
-
-   cookievalue= escape(document.myform.customer.value) + ";";
-   document.cookie="name=" + cookievalue;
-   alert("Setting Cookies : " + "name=" + cookievalue );
-}
-
 
 
 function plaats_stoelen() 
@@ -97,7 +85,7 @@ function maak_stoel(klasse,rn,sn,prijs)
 	var plaats = document.createElement("button")
 	
 	plaats.type = "button";
-	plaats.id=sn+" op rij nummer: " + rn;
+	plaats.id=sn+" op rij nummer: " + rn +x;
 	plaats.name=klasse;
 	
 	
@@ -290,8 +278,8 @@ function local(){
 	
 	
 	sessionStorage.getItem("titel");
-	var x = sessionStorage.getItem("titel");
 	
+	var x = sessionStorage.getItem("titel");
 	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"</center>";
 }
 
