@@ -4,7 +4,22 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
-<body>
+<body onload="local()">
+<script language="javascript" type="text/javascript">
+var link ="Hercules"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
+}
+
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -37,7 +52,7 @@
 				<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 				<img src="../../images/kijkwijzers/geweld.png" class="kijkwijzer">
 				<a href="http://www.imdb.com/title/tt1267297/?ref_=nv_sr_1"><img src="../../images/IMDB_Rating/herculesrating.png" class="rating"></a>
-				<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+				<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 			</div>
 		</div>
 		

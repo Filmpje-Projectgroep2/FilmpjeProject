@@ -15,6 +15,10 @@
 	display:inline;
 }
 </style>
+
+
+
+<body onload="local()">
 <script language="javascript" type="text/javascript">
 var link ="As above so below"; 
 
@@ -22,11 +26,14 @@ function local(){
 	sessionStorage.removeItem("titel");
 	sessionStorage.setItem("titel", link);
 	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
 }
+
 </script>
-
-
-<body onload="local()">
 
 <div class="top-balk"></div>
 <div id="container-detail">

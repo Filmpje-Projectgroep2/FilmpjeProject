@@ -5,7 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
-<body>
+<body onload="local()">
+<script language="javascript" type="text/javascript">
+var link ="The lord of the rings 2"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
+}
+
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -39,7 +54,7 @@
 					<img src="../../images/kijkwijzers/angst.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 					<a href="http://www.imdb.com/title/tt0167261/?ref_=nv_sr_3"><img src="../../images/IMDB_Rating/lordoftherings2.png" class="rating"></a>
-					<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+					<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 				</div>
 				<div class="beschrijving-film">
 				<p>Het reisgenootschap is dan wel uit elkaar gevallen, maar het de tocht om de magische ring te vernietigen duurt voort. Terwijl Frodo en Sam hun leven aan Gollem moeten toevertrouwen indien zij de weg naar Mordor willen vervolgen, rukt Saruman's duistere leger op. Onderwijl maken de overige leden van het reisgenootschap zich samen met de bewoners van Midden-aarde op voor een heftige strijd. De oorlog om de Magische Ring is definitief begonnen…</p>

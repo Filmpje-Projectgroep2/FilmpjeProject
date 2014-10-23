@@ -1,10 +1,30 @@
 var totaalprijs = 0;
-var x = " Film:" + sessionStorage.getItem("titel");
-var gereserveerd=0;
-//var idd=document.getElementById(key);
+var x = " Film: " + sessionStorage.getItem("titel");
 
+var rijnummer;
+var gevonden;
+var zaalnummer = sessionStorage.getItem("zaalnummers");
+var datumtijd = sessionStorage.getItem("datum");
+var zaal = 1;
+function welkezaal(){
+if(zaalnummer==1)
+{
+	zaal=zaal1;
+}
+	else
+{
+		if(zaalnummer==2)
+{
+	zaal = zaal2;
+}
+	else
+{
+	zaal=zaal3;
+}
 
+}
 
+}
 
 
 var zaal2=
@@ -24,7 +44,27 @@ var zaal2=
 [0,0,3,3,3,3,3,3,3,3,0,0],
 ];
 
-var zaal=
+var zaal3=
+[
+[0,3,3,3,3,3,0,3,3,3,3,3,3,0,3,3,3,3,3,0],
+[0,3,3,3,3,3,0,2,2,2,2,2,2,0,3,3,3,3,3,0],
+[0,3,3,3,3,2,0,2,2,2,2,2,2,0,2,3,3,3,3,0],
+[0,3,3,3,3,2,0,2,2,2,2,2,2,0,2,3,3,3,3,0],
+[0,3,3,3,2,2,0,2,2,2,2,2,2,0,2,2,3,3,3,0],
+[0,3,3,3,2,2,0,2,2,1,1,2,2,0,2,2,3,3,3,0],
+[3,3,3,2,2,2,0,2,1,1,1,1,2,0,2,2,2,3,3,3],
+[3,3,3,2,2,2,0,1,1,1,1,1,1,0,2,2,2,3,3,3],
+[3,3,2,2,2,2,0,1,1,1,1,1,1,0,2,2,2,2,3,3],
+[3,3,2,2,2,2,0,1,1,1,1,1,1,0,2,2,2,2,3,3],
+[3,3,2,2,2,2,0,1,1,1,1,1,1,0,2,2,2,2,3,3],
+[0,3,3,2,2,2,0,2,1,1,1,1,2,0,2,2,2,3,3,0],
+[0,3,3,3,2,2,0,2,2,1,1,2,2,0,2,2,3,3,3,0],
+[0,0,3,3,2,2,0,2,2,2,2,2,2,0,2,2,3,3,0,0],
+[0,0,3,3,3,3,0,2,2,2,2,2,2,0,3,3,3,3,0,0],
+[0,0,0,3,3,3,0,3,3,3,3,3,3,0,3,3,3,0,0,0],
+[0,0,0,3,3,3,0,3,3,3,3,3,3,0,3,3,3,0,0,0],
+];
+var zaal1=
 [
 [0,0,0,0,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,0,0,0,0],
 [0,0,0,3,3,3,3,3,3,2,2,0,2,2,2,2,2,2,2,2,0,2,2,3,3,3,3,3,3,0,0,0],
@@ -53,6 +93,7 @@ var zaal=
 
 function plaats_stoelen() 
 {
+welkezaal();
 var plaats;
 for (var rn = 0; rn <zaal.length ; rn++)
     {
@@ -82,14 +123,14 @@ function maak_leegte()
 
 function maak_stoel(klasse,rn,sn,prijs)
 {
-	var plaats = document.createElement("button")
+	var plaats = document.createElement("button");
 	
 	plaats.type = "button";
-	plaats.id=sn+" op rij nummer: " + rn +x;
+	plaats.id=sn+" op rij nummer: " + rn +x +" Zaalnummer: " +zaalnummer+" " +datumtijd;
 	plaats.name=klasse;
 	
 	
-	plaats.addEventListener("click",reserveer,false)
+	plaats.addEventListener("click",reserveer,false);
 	plaats.value=prijs;
 	
 	
@@ -116,13 +157,13 @@ function reserveer(e){
 
 	
 	if(event.target.className == "klasse_gereserveerd"){
-	alert("stoel is al gereserveerd")
+	alert("stoel is al gereserveerd");
 	}
 	
 	
 	else {
 	var plaats=e.target;
-	var prijs=e.target.Value;
+	
 	var klasse = plaats.name;
 	var stoel_prijs=plaats.value;
 	var Klasse;
@@ -212,8 +253,8 @@ function lees_Storage(){
 }
 
 function is_gereserveerd(plaats){
-	var id= plaats.id
-	gevonden = false
+	var id= plaats.id;
+	gevonden = false;
 	var i =0;
 	while(!gevonden && ( i < localStorage.length)){
 		if(id == localStorage.key(i)){
@@ -234,7 +275,7 @@ function start()
 function wissen()
 {
 	var r = confirm("Wil je alles wissen?");
-if (r == true) {
+if (r === true) {
     location.reload();
 	localStorage.clear();
 } else {
@@ -246,11 +287,11 @@ if (r == true) {
 function afrekenen()
 {
 if(totaalprijs<=0){
-alert("Bestel eerst iets.")
+alert("Bestel eerst iets.");
 }
 else{
 	var r = confirm("Wilt u afrekenen?");
-if (r == true) {
+if (r === true) {
 	alert("U heeft "+totaalprijs + " euro betaalt en wordt nu naar de e-ticket gestuurd.");
 	document.getElementById('overschrijven').style.display = 'none';
 	document.getElementById('ETICKET').style.display = 'inline';
@@ -277,10 +318,9 @@ function schrijf(){
 function local(){
 	
 	
-	sessionStorage.getItem("titel");
 	
-	var x = sessionStorage.getItem("titel");
-	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"</center>";
+	
+	
+	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"<br>"+"In zaalnummer: "+zaalnummer+" "+datumtijd+"</center>";
 }
-
 

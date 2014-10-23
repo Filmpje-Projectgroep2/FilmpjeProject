@@ -6,12 +6,15 @@
 </head>
 <body onload="local()">
 <script>
-var link ="Winter Sleep"; 
+var link ="Winter sleep"; 
 
 function local(){
 	sessionStorage.removeItem("titel");
 	sessionStorage.setItem("titel", link);
-	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 2);
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
 }
 </script>
 

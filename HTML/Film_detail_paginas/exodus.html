@@ -5,7 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
-<body>
+<body onload="local()">
+<script language="javascript" type="text/javascript">
+var link ="Exodus"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
+}
+
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">

@@ -5,7 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
-<body>
+<body onload="local()">
+<script language="javascript" type="text/javascript">
+var link ="Lord of the rings 1"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
+}
+
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -39,7 +54,7 @@
 					<img src="../../images/kijkwijzers/angst.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 					<a href="http://www.imdb.com/title/tt0120737/?ref_=nv_sr_2"><img src="../../images/IMDB_Rating/lordoftherings1.png" class="rating"></a>
-					<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+					<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 				</div>
 				<div class="beschrijving-film">
 				<p>In deel 1 van The Lord of the Rings: The Fellowship of the Ring krijgt de Hobbit Frodo (ELIJAH WOOD) een ring in zijn bezit. Zijn oude vriend, de tovenaar Gandalf (Ian McKellen), vertelt hem dat dit de The One Ring is. Die Ring is het instrument van absolute macht en kan ervoor zorgen dat Sauron, The Dark Lord over Middle-earth kan heersen. Frodo moet, samen met een toegewijd reisgenootschap, bestaande uit mensen, een dwerg, een elf, hobbits en Gandalf (The Fellowship) de Ring meenemen naar de Mount Doom waar deze ooit gesmeden werd.</p>

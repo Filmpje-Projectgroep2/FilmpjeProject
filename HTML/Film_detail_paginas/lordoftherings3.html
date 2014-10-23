@@ -5,7 +5,22 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
-<body>
+<body onload="local()">
+<script language="javascript" type="text/javascript">
+var link ="Lord of the rings 3"; 
+
+function local(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", link);
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 19:00");
+}
+
+</script>
 
 <div class="top-balk"></div>
 <div id="container-detail">
@@ -39,7 +54,7 @@
 					<img src="../../images/kijkwijzers/angst.png" class="kijkwijzer">
 					<img src="../../images/kijkwijzers/schelden.png" class="kijkwijzer">
 					<a href="http://www.imdb.com/title/tt0167260/?ref_=nv_sr_2"><img src="../../images/IMDB_Rating/lordoftherings3.png" class="rating"></a>
-					<a href="../reserveren.html" class="reserveer">Reserveer nu</a>
+					<a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveer" >Reserveer nu</a>
 				</div>
 				<div class="beschrijving-film">
 				<p>Het laatste slopende gevecht om Midden-aarde begint. Frodo en Sam, geleid door Gollem, zetten hun gevaarlijke missie voort om zodoende de Ene Ring door het vulkanische vuur van Mount Doom te laten vernietigen. Intussen worstelt Aragorn met zijn lot als leider, maar weet desondanks zijn trouwe en dappere volgelingen aan te voeren in hun strijd tegen de duistere krachten van Dark Lord Sauron, zodat de Ringdrager zijn queeste kan volbrengen.</p>
