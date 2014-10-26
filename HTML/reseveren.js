@@ -66,6 +66,7 @@ var zaal3=
 ];
 var zaal1=
 [
+
 [0,0,0,0,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,3,0,3,3,3,3,3,3,3,0,0,0,0],
 [0,0,0,3,3,3,3,3,3,2,2,0,2,2,2,2,2,2,2,2,0,2,2,3,3,3,3,3,3,0,0,0],
 [0,0,0,3,3,3,3,3,2,2,2,0,2,2,2,2,2,2,2,2,0,2,2,2,3,3,3,3,3,0,0,0],
@@ -100,17 +101,24 @@ for (var rn = 0; rn <zaal.length ; rn++)
 	    for(var sn=0 ; sn< zaal[rn].length ; sn++)
 	   {
 			switch(zaal[rn][sn])
-			{
+			{	
 				case 0: plaats = maak_leegte() ;break;
 				case 1: plaats = maak_stoel(1,rn+1,sn+1,13.50); break;
 				case 2: plaats = maak_stoel(2,rn+1,sn+1,10.50); break;
 				case 3: plaats = maak_stoel(3,rn+1,sn+1,9.00); break;
+				
+				
 			}
+			
 			document.getElementById("DIV_vliegtuig").appendChild(plaats);
        }
 		document.getElementById("DIV_vliegtuig").appendChild(document.createElement("br"));
+		
     }
+	
 }
+
+
 
 function maak_leegte()
 {
@@ -307,20 +315,24 @@ if (r === true) {
 
 function schrijf(){
 
-	
+
 	
 	var input = document.getElementsByClassName("gereserveerd");
 	for ( var i = 0; i < input.length; i++){
+	
 	document.getElementById('test').innerHTML += "<br> Uw stoelnummer is "+ input[i].id+".";
-	 
+	
 }
 }
 function local(){
 	
 	
 	
+	document.getElementById('DIV_vliegtuig').innerHTML+=" <img src='../images/klasses.png'>"
 	
 	
 	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"<br>"+"In zaalnummer: "+zaalnummer+" "+datumtijd+"</center>";
+	
+
 }
 
