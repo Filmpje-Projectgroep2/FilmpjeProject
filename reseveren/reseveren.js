@@ -110,7 +110,7 @@ function reserveer(e){
 
 	
 	if(event.target.className == "klasse_gereserveerd"){
-	alert("stoel is al gereserveerd")
+	alert("Deze stoel is reeds gereserveerd, selecteer een andere plaats.")
 	}
 	
 	
@@ -226,12 +226,12 @@ function start()
 
 function wissen()
 {
-	var r = confirm("Wil je alles wissen?");
+	var r = confirm("Wilt u alle gegevens wissen?");
 if (r == true) {
     location.reload();
 	localStorage.clear();
 } else {
-    x = "You pressed Cancel!";
+    x = "U heeft de actie geannuleerd.";
 }
 	
 }
@@ -240,7 +240,7 @@ function afrekenen()
 {
 
 if(totaalprijs<=0){
-alert("Bestel eerst iets.")
+alert("Selecteer gelieve eerst de gewenste reservering voordat u probeert af te rekenen.")
 }
 else{
 	var r = confirm("Wilt u afrekenen?");
@@ -248,7 +248,7 @@ if (r == true) {
     alert("U heeft een bedrag van :"+totaalprijs+" euro afgerekend!");
 	location.reload();
 } else {
-    x = "You pressed Cancel!";
+    x = "U heeft de actie geannuleerd.";
 }
 }	
 }
