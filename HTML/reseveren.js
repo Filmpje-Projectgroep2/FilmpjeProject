@@ -321,6 +321,6 @@ function local(){
 	
 	
 	
-	document.getElementById("titel").innerHTML="<center>"+"Reseveer voor: "+x+"<br>"+"In zaalnummer: "+zaalnummer+" "+datumtijd+"</center>";
+	document.getElementById("titel").innerHTML+="<center>"+"Reseveer voor: "+x+"<br>"+"In zaalnummer: "+zaalnummer+" "+datumtijd+"</center>";
 }
 
