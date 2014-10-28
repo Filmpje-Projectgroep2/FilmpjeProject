@@ -502,8 +502,13 @@ box-shadow: 0 0 12px #4F0000;
 }
 
 /* CSS die van toepassing is op de contact pagina */
+.contactgegevens{
+	float:left;
+	margin-right: 30px;
+}
 .contact{
-
+	float:left;
+	margin-right: 30px;
 }
 	
 #adres{
@@ -518,6 +523,16 @@ box-shadow: 0 0 12px #4F0000;
 }
 
 .maps{
-	margin-top: 30px;
+
 }
+
+.bioscoopinfo {
+	float:left;
+}
+
+.acties{
+	float:right;
+}
+
+
 
