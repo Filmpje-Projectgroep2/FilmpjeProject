@@ -10,6 +10,17 @@
 function maandag(){
 document.write(Date());
 }
+
+function asabove(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", "As  above so below");
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 21:00");
+}
 </script>
 
 <body>
@@ -56,7 +67,7 @@ document.write(Date());
 			<form class="FilmTekst"><font class="FilmTitel">The Maze Runner</font><br /><br />The Maze Runner, gebaseerd op de gelijknamige bestseller van James Dashner, speelt zich af in een apocalyptische wereld</form>
 		</div>
 		<div class="FilmTijden">
-			<button class="TijdenButtons">21:00 <b>Zaal 1</b></button>
+			<button  class="TijdenButtons" onclick="asabove();location.href='reserveren.html'">21:00 <b>Zaal 1</b></button>
 		</div>
 		<div class="FilmGegevens">
 			<img src="../images/posters/Lucy.jpg" class="FilmImageAgenda" />

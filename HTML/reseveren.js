@@ -1,11 +1,17 @@
 var totaalprijs = 0;
 var x = " Film: " + sessionStorage.getItem("titel");
-
+var voornaam = 0;
+var achternaam = 0;
+var emailadres = 0;
 var rijnummer;
 var gevonden;
 var zaalnummer = sessionStorage.getItem("zaalnummers");
 var datumtijd = sessionStorage.getItem("datum");
 var zaal = 1;
+var bestelnummer ="Foutje";
+var bestelnummer =sessionStorage.getItem("bestel");
+var nummer = Number(sessionStorage.getItem("bestel")) + Number(1);
+
 function welkezaal(){
 if(zaalnummer==1)
 {
@@ -286,28 +292,54 @@ if (r === true) {
 
 function afrekenen()
 {
+
+voornaam=document.getElementById('voor').value
+achternaam=document.getElementById('achter').value
+emailadres=document.getElementById('email').value
+
 if(totaalprijs<=0){
-alert("Bestel eerst iets.");
+alert("Gelieve eerst iets te bestellen.");
+
+}
+else{
+if(voornaam==0){
+alert("Gelieve uw voornaam in te vullen")
+}
+else{
+if(achternaam==0){
+alert("Gelieve uw achternaam in te vullen")
+}
+else{
+if(emailadres==0){
+alert("Gelieve uw emailadres in te vullen")
 }
 else{
 	var r = confirm("Wilt u afrekenen?");
 if (r === true) {
-	alert("U heeft "+totaalprijs + " euro betaalt en wordt nu naar de e-ticket gestuurd.");
+	alert("U heeft "+totaalprijs + " euro betaalt, en wordt nu naar de e-ticket gestuurd.");
 	document.getElementById('overschrijven').style.display = 'none';
+	
 	document.getElementById('ETICKET').style.display = 'inline';
-	
-	
-	
+	sessionStorage.setItem("bestel", nummer);
+	document.getElementById('ETICKET').innerHTML += "<br>" +"Deze ETICKET staat op naam van " + voornaam +" "+ achternaam+" "  + emailadres;
+	document.getElementById('ETICKET').innerHTML += "<br>" +"Bestelnummer: "+ bestelnummer;
 	
 } else {
-    x = "You pressed Cancel!";
+    x = "Bestelling geanulleerd";
+	alert(x);
+}
 }
 }	
 }
+}
+}
+
+
+
+
+
 
 function schrijf(){
-
-	
 	
 	var input = document.getElementsByClassName("gereserveerd");
 	for ( var i = 0; i < input.length; i++){
@@ -316,11 +348,6 @@ function schrijf(){
 }
 }
 function local(){
-	
-	
-	
-	
-	
 	document.getElementById("titel").innerHTML+="<center>"+"Reserveer voor: "+x+"<br>"+"In zaalnummer: "+zaalnummer+" "+datumtijd+"</center>";
 }
 
