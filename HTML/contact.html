@@ -20,101 +20,90 @@
 
 <div class="top-balk"></div>
 <div id="container">
-<!-- Navigatie -->
-<div class="navcentre">
-	<ul>
-		<a href="../index.html"><img src="../images/Logo.png" class="logo"></a>
-		<li><a href="../index.html">Home</a></li>
-		<li><select id="film-dropdown" onchange="window.location=this.value" style="-webkit-appearance: none;">
-                <option>FILM OVERZICHT</option>
-				<option value="film_overzicht.html">ACTUELE FILMS</option>
-				<option value="klassiekefilms.html">KLASSIEKE FILMS</option>
-				<option value="verwacht.html">VERWACHT</option>
-				</select></li>
-		<li><a href="bioscoopagenda.html">Bioscoopagenda</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<form name="zoeken" method="post" action="zoekresultaten.php">
-		<input name="search" type="search" size="25" maxlength="25" />
-		<input type="image" src="../images/searchbutton.png" alt="Search">
+	<!-- Navigatie -->
+	<div class="navcentre">
+		<ul>
+			<a href="../index.html"><img src="../images/Logo.png" class="logo"></a>
+			<li><a href="../index.html">Home</a></li>
+			<li><select id="film-dropdown" onchange="window.location=this.value" style="-webkit-appearance: none;">
+					<option>FILM OVERZICHT</option>
+					<option value="film_overzicht.html">ACTUELE FILMS</option>
+					<option value="klassiekefilms.html">KLASSIEKE FILMS</option>
+					<option value="verwacht.html">VERWACHT</option>
+					</select></li>
+			<li><a href="bioscoopagenda.html">Bioscoopagenda</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<form name="zoeken" method="post" action="zoekresultaten.php">
+			<input name="search" type="search" size="25" maxlength="25" />
+			<input type="image" src="../images/searchbutton.png" alt="Search">
+			</form>
+		</ul>
+	</div><!-- TopKnoppen -->
+	<hr></hr>
+	
+	<div class="sliderbioscoopinfo">
+				<script language="JavaScript"> 
+				var i = 0; var path = new Array(); 
+				
+				// Lijst van plaatjes
+				path[0] = "../images/filmpje_afbeeldingen/Bioscooplounge.png"; 
+				path[1] = "../images/filmpje_afbeeldingen/Bioscoopzaal2.png"; 
+				path[2] = "../images/filmpje_afbeeldingen/Bioscoopzaal.png";
+				path[3] = "../images/filmpje_afbeeldingen/Bioscoopstoelen.png";
+				
+				function swapImage() { document.slide.src = path[i]; 
+				if(i < path.length - 1) i++; 
+				else i = 0; setTimeout("swapImage()",5000); 
+				} window.onload=swapImage;
+			</script> 
+			<img height="380" name="slide" class="sliderposter" src="../images/filmpje_afbeeldingen/Bioscooplounge.png" width="1150" />
+	</div>
+	
+	<div class="bioscoopinfo">
+		<h2>Filmpje</h2>
+		<p>Filmpje is een zeer unieke bioscoop die u graag met top kwaliteit laat genieten van de nieuwste en oudere films. Naast onze catering in de lounge of zalen bieden wij ook de beste audio en filmformaten aan zoals Imax en Auro-3D. Tijdens het reserveren van een film bij Filmpje kunt u zelf uw plaatsen uitkiezen zodat u altijd tevreden bent met uw stoelen. Zo kunt u de beste stoelen in het midden van de zaal reserveren of de wat minder goede plaatsen tegen een lagere prijs.</p>
+	</div>
+	
+	<div class="acties">
+		<h2>Acties</h2>
+		<p>Filmpje heeft regelmatig acties waardoor een filmpje pakken nog leuker wordt, dit kan vari&euml;ren van korting op snoep of kaartjes tot last minute kaartjes uitverkoop. Hou dus de Home page van Filmpje goed in de gaten voor onze nieuwste actie posters.<p>
+	</div>
+	
+	<div class="locatie">
+		<h2>Locatie</h2>
+		<p>Onze locatie op de West-Kruiskade 26 in het midden van Rotterdam is goed bereikbaar met elk vervoersmiddel u wenst te komen. Er zijn genoeg mogelijkheden om met het openbaar vervoer te komen, en genoeg parkeergelegenheden zodat u zonder moeite Filmpje kunt bereiken.</p>
+	</div>
+	
+	<div class="contact">
+		<h2>Contact formulier</h2>
+		<form action="MAILTO:hans3132@live.nl" method="post" enctype="text/plain" id=gegevens>
+			Naam:<br>
+			<input type="text" name="name" value="Naam"><br>
+			E-mail adres:
+			<br>
+			<input type="text" name="mail" value="E-mail"><br>
+			Vraag:
+			<br>
+			<input type="text" name="comment" value="Vraag">
+			<br>
+			<br>
+			<input type="submit" value="Verstuur"onclick="verstuur()">
+			<input type="reset" value="Reset">
 		</form>
-	</ul>
-</div><!-- TopKnoppen -->
-<hr></hr>
-
-<div class="sliderbioscoopinfo">
-			<script language="JavaScript"> 
-			var i = 0; var path = new Array(); 
-			
-			// Lijst van plaatjes
-			path[0] = "../images/filmpje_afbeeldingen/Bioscooplounge.png"; 
-			path[1] = "../images/filmpje_afbeeldingen/Bioscoopzaal2.png"; 
-			path[2] = "../images/filmpje_afbeeldingen/Bioscoopzaal.png";
-			path[3] = "../images/filmpje_afbeeldingen/Bioscoopstoelen.png";
-			
-			function swapImage() { document.slide.src = path[i]; 
-			if(i < path.length - 1) i++; 
-			else i = 0; setTimeout("swapImage()",5000); 
-			} window.onload=swapImage;
-		</script> 
-		<img height="380" name="slide" class="sliderposter" src="../images/filmpje_afbeeldingen/Bioscooplounge.png" width="1150" />
-</div>
-
-<div class="bioscoopinfo">
-	<h2>Filmpje</h2>
-	<p>Filmpje is een zeer unieke bioscoop die u graag met top kwaliteit laat genieten van de nieuwste en oudere films. Naast onze catering in de lounge of zalen bieden wij ook de beste audio en filmformaten aan zoals Imax en Auro-3D. Tijdens het reserveren van een film bij Filmpje kunt u zelf uw plaatsen uitkiezen zodat u altijd tevreden bent met uw stoelen. Zo kunt u de beste stoelen in het midden van de zaal reserveren of de wat minder goede plaatsen tegen een lagere prijs.</p>
-</div>
-
-<div class="acties">
-	<h2>Acties</h2>
-	<p>Filmpje heeft regelmatig acties waardoor een filmpje pakken nog leuker wordt, dit kan vari&euml;ren van korting op snoep of kaartjes tot last minute kaartjes uitverkoop. Hou dus de Home page van Filmpje goed in de gaten voor onze nieuwste actie posters.<p>
-</div>
-
-<div class="locatie">
-	<h2>Locatie</h2>
-	<p>Onze locatie op de West-Kruiskade 26 in het midden van Rotterdam is goed bereikbaar met elk vervoersmiddel u wenst te komen. Er zijn genoeg mogelijkheden om met het openbaar vervoer te komen, en genoeg parkeergelegenheden zodat u zonder moeite Filmpje kunt bereiken.</p>
-</div>
-
-<div class="contact">
-	<h2>Contact formulier</h2>
+	</div>
 	
-
-	<form action="MAILTO:hans3132@live.nl" method="post" enctype="text/plain" id=gegevens>
-		Naam:<br>
-		<input type="text" name="name" value="Naam"><br>
-		E-mail:
-		<br>
-		<input type="text" name="mail" value="E-mail"><br>
-		vraag:
-		<br>
-		<input type="text" name="comment" value="Vraag">
-		<br>
-		<br>
-		<input type="submit" value="Verstuur"onclick="verstuur()">
-		<input type="reset" value="Reset">
-	</form>
+	<div class="contactgegevens" id=adres>
+		<h2>Contact gegevens</h2>
+		West-Kruiskade 26,<br>
+		3014 AS in Rotterdam<br>
+		<a href="mailto:contact@filmpje.nl?subject=vraag%20filmpje">contact@filmpje.nl</a>
+		
+	</div>	 
 	
-
+	<div class="maps">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.742043466261!2d4.469734700000004!3d51.92041729999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a3f2470a65%3A0xd4bc43a2c385f1ed!2sWest-Kruiskade+26%2C+3014+AS+Rotterdam!5e0!3m2!1snl!2snl!4v1410907007978" width="60%" height="350" frameborder="0" style="border:0"></iframe>
+	</div>
 </div>
-
-<div class="contactgegevens" id=adres>
-	<h2>Contact gegevens</h2>
-	West-Kruiskade 26,<br>
-	3014 AS in Rotterdam<br>
-	<a href="mailto:contact@filmpje.nl?subject=vraag%20filmpje">contact@filmpje.nl</a>
-	
-</div>	 
-
-
-
-
-
-<div class="maps">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.742043466261!2d4.469734700000004!3d51.92041729999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a3f2470a65%3A0xd4bc43a2c385f1ed!2sWest-Kruiskade+26%2C+3014+AS+Rotterdam!5e0!3m2!1snl!2snl!4v1410907007978" width="65%" height="350" frameborder="0" style="border:0"></iframe>
-</div>
-</div>
-
-
-
 
 </body>
 </html>
