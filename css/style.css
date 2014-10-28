@@ -188,10 +188,9 @@ input[type=image] {
 .Top10Home {
 	display: inline-block;
 	vertical-align: top;
-	width: 200px;
-	margin-left: 15px;
+	width: 250px;
 	font-family: MyriadPro;
-	font-size: 125%;
+	font-size: 120%;
 	padding:0px;
 }
 

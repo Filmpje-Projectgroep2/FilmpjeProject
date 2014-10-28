@@ -42,7 +42,22 @@
 <hr></hr>
 
 <div class="maps">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.742043466261!2d4.469734700000004!3d51.92041729999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434a3f2470a65%3A0xd4bc43a2c385f1ed!2sWest-Kruiskade+26%2C+3014+AS+Rotterdam!5e0!3m2!1snl!2snl!4v1410907007978" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+			<script language="JavaScript"> 
+			var i = 0; var path = new Array(); 
+			
+			// Lijst van plaatjes
+			path[0] = "../images/filmpje_afbeeldingen/Bioscooplounge.png"; 
+			path[1] = "../images/filmpje_afbeeldingen/Bioscoopscherm.png"; 
+			path[2] = "../images/filmpje_afbeeldingen/Bioscoopbalie.png"; 
+			path[3] = "../images/filmpje_afbeeldingen/Bioscoopstoelen.png";
+			path[4] = "../images/filmpje_afbeeldingen/Bioscoopzaal.png";
+			
+			function swapImage() { document.slide.src = path[i]; 
+			if(i < path.length - 1) i++; 
+			else i = 0; setTimeout("swapImage()",5000); 
+			} window.onload=swapImage;
+		</script> 
+		<img height="380" name="slide" class="sliderposter" src="../images/filmpje_afbeeldingen/Bioscooplounge.png" width="880" />
 </div>
 
 <div class="bioscoopinfo">
