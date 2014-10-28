@@ -190,7 +190,7 @@ input[type=image] {
 
 .sliderposter:hover
 {
-	-webkit-animation: fuck 500ms infinite;
+	-webkit-animation: fuck 5ms infinite;
 	/*transform: rotate3d(20,40,40,90deg);*/
 }
 
