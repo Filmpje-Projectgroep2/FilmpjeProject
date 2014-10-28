@@ -20,6 +20,17 @@ function local(){
 	sessionStorage.setItem("datum", "Vandaag om 19:00");
 }
 
+function maze1(){
+	sessionStorage.removeItem("titel");
+	sessionStorage.setItem("titel", "Maze runner");
+	
+	sessionStorage.removeItem("zaalnummers");
+	sessionStorage.setItem("zaalnummers", 1);
+	
+	sessionStorage.removeItem("datum");
+	sessionStorage.setItem("datum", "Vandaag om 21:00");
+}
+
 </script>
 
 <div class="top-balk"></div>
@@ -70,7 +81,7 @@ function local(){
 				<caption><h2>Filmtijden Vandaag</h2></caption>
 					<tr>
 						<td><b>Zaal 1</b></td>
-						<td class="tijd"><a href="../reserveren.html"onclick="location.href=this.href+'?film='+link;return false;local()" class="reserveertijden">21:00</a></td>
+						<td class="tijd"><a href="../reserveren.html"onclick="maze1()" class="reserveertijden">21:00</a></td>
 						<td></td>
 					</tr>
 					<tr>
