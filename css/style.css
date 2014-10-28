@@ -83,7 +83,7 @@ body  {
     border: 0 none;
     font-size: 25px;
     padding: 2px 10px;
-    width: 160px;
+    width: 150px;
 	font-family: Yanone;
 	cursor: pointer; cursor: hand;
 	-webkit-appearance: none;
@@ -151,11 +151,12 @@ input[type=image] {
 
 .box {
 	float: left;
-	font-size: 15px;
+	font-size: 14px;
 	text-align: justify;
-	width: 300px;
+	width: 350px;
 	height: 150px;
 	margin-left: 30px;
+	margin-top: 20px;
 }
 
  .Top10Home ol li a {
@@ -208,25 +209,6 @@ input[type=image] {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 30px;
-}
-
-.agenda-vandaag {
-	display: inline-block;
-	width: 500px;
-	margin-left: 35px;
-}
-
-.agenda-vandaag table {
-    border-collapse: collapse;
-	background-color: #dcd9d2;
-}
-
-.agenda-vandaag td{
-	text-align: center;
-	margin: 5px;
-	width: 50px;
-	border: 2px solid #c6c3bd;
-	height: 25px;
 }
 
 .twitter-timeline {
