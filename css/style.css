@@ -211,6 +211,11 @@ input[type=image] {
 	margin-top: 30px;
 }
 
+.twitter-timeline {
+	float: right;
+	margin-top: 20px;
+}
+
 /* CSS van toepassing op filmoverzicht */
 
 #Sorteerknoppen {
@@ -515,13 +520,6 @@ box-shadow: 0 0 12px #4F0000;
 }
 	
 #adres{
-	
-}
-
-#twitter{
-	float:right;
-	position: relative;
-    top: -350px;
 	
 }
 
