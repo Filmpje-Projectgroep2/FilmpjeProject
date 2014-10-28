@@ -184,31 +184,13 @@ input[type=image] {
 	margin-right: 35px;
 	border-radius: 5px;
 	cursor: pointer;
-	/*transition-duration: 1s;*/
-	animation: none;
 }
 
 .sliderposter:hover
 {
-	-webkit-animation: fuck 5ms infinite;
-	/*transform: rotate3d(20,40,40,90deg);*/
+	
 }
 
-@-webkit-keyframes fuck
-{
-0%
-{
-	transform: rotate(0deg);
-}
-50%
-{
-	transform: scale(1.8,1.8) rotate(180deg);
-}
-100%
-{	
-	transform: rotate(360deg) scale(1,1);
-}
-}
 
 .Top10Home {
 	display: inline-block;
