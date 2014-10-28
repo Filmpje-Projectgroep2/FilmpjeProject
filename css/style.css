@@ -151,12 +151,11 @@ input[type=image] {
 
 .box {
 	float: left;
-	font-size: 14px;
+	font-size: 15px;
 	text-align: justify;
-	width: 350px;
+	width: 300px;
 	height: 150px;
 	margin-left: 30px;
-	margin-top: 20px;
 }
 
  .Top10Home ol li a {
@@ -214,6 +213,25 @@ input[type=image] {
 .twitter-timeline {
 	float: right;
 	margin-top: 20px;
+}
+
+.agenda-vandaag {
+	display: inline-block;
+	width: 500px;
+	margin-left: 35px;
+}
+
+.agenda-vandaag table {
+    border-collapse: collapse;
+	background-color: #dcd9d2;
+}
+
+.agenda-vandaag td{
+	text-align: center;
+	margin: 5px;
+	width: 50px;
+	border: 2px solid #c6c3bd;
+	height: 25px;
 }
 
 /* CSS van toepassing op filmoverzicht */
