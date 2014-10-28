@@ -440,7 +440,8 @@ input[type=image] {
 }
 
 .agendabuttons:hover, .agendabuttons:focus, .agendabuttons:active {
-box-shadow: 0 0 12px #4F0000;
+	box-shadow: 0 0 12px #4F0000;
+	cursor: pointer;
 }
 
 .AgendaZaal1{
@@ -510,6 +511,10 @@ box-shadow: 0 0 12px #4F0000;
 .TijdenButtons{
 	border: 2px solid #4F0000;
 	border-radius: 25px;
+}
+
+.TijdenButtons:hover {
+	cursor: pointer;
 }
 
 .FilmTitel{
