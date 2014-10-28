@@ -334,6 +334,11 @@ input[type=image] {
 	padding: 5px;
 }
 
+.reserveertijden{
+	color: black;
+	text-decoration: none;
+}
+
 .rating {
 	float: right;
 	margin-left: 2px;
