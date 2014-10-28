@@ -37,18 +37,25 @@
 			var i = 0; var path = new Array(); 
 			
 			// Lijst van plaatjes
-			path[0] = "images/sliderposters/popcorn.jpg"; 
-			path[1] = "images/sliderposters/intothestorm.jpg"; 
-			path[2] = "images/sliderposters/lucy.jpg"; 
-			path[3] = "images/sliderposters/guardians.jpeg";
-			
-			function swapImage() { document.slide.src = path[i]; 
-			if(i < path.length - 1) i++; 
-			else i = 0; setTimeout("swapImage()",5000); 
-			} window.onload=swapImage;
+				path[0] = {plaatje:"images/sliderposters/popcorn.jpg",url:"http://google.com/"}; 
+				path[1] = {plaatje:"images/sliderposters/intothestorm.jpg",url:"http://dumpert.nl"};  
+				path[2] = {plaatje:"images/sliderposters/lucy.jpg",url:"http://google.com/"}; 
+				path[3] = {plaatje:"images/sliderposters/guardians.jpeg",url:"http://google.com/"}; 
+				
+				function swapImage() { 
+				if(i < path.length - 1) i++; 
+				else i = 0; 
+				document.slide.src = path[i].plaatje;
+				}
+				//window.onload=swapImage;
+				function openPoster()
+				{
+					document.location = path[i].url;
+				}
+				setInterval(swapImage,5000); 
 		</script> 
 
-		<img height="380" name="slide" class="sliderposter" src="images/sliderposters/intothestorm.jpg" width="880" />
+		<img height="380" name="slide" class="sliderposter" src="images/sliderposters/intothestorm.jpg" onclick="openPoster();" width="880" />
 
 		<div class="Top10Home">
 			<ol>
